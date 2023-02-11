@@ -3,7 +3,7 @@ I'll explain what a windows service is show you how to create one by creating a 
 
 # What are Windows Services?
 
-> **Windows services are very important computer program that operates in the background of the windows operating system. They ensure that processes are able to be created and run continously which provides the efficiently functioning of the operating system. 
+> **Windows services are very important computer program that operates in the background of the windows operating system. They ensure that processes are able to be created and run continously which provides the efficiently functioning of the operating system.**
 
 ### Below is picture of services I currently have running after powering on my computer. I'll highlight the steps I used to get to the service application and  give a few explanations of the important things to take note of.**   
 
