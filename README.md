@@ -5,9 +5,9 @@ I'll explain what a windows service is show you how to create one by creating a 
 
 > **Windows services are very important computer program that operates in the background of the windows operating system. They ensure that processes are able to be created and run continously which provides the efficiently functioning of the operating system.**
 
-### Below is picture of services I currently have running after powering on my computer. I'll highlight the steps I used to get to the service application and  give a few explanations of the important things to take note of.**   
+### I'll highlight the steps I used to get to the service application and  give a few explanations of the important things to take note of.**   
 
-> **First things first, search for Services on your home screen search bar**
+> **I searched for Services on your home screen search bar**
 
 ![](https://github.com/xst0rmy/P-Set2-Creating-a-Windows-Service/blob/main/Images/ws1.png)
 
@@ -21,15 +21,15 @@ Now time for some brief explanations
 
 > **According to the image above, the Name shows the name tab which lists all of the available services for the operating system.**
 
-> **The "Description" tab gives a detailed description of each service. Clicking on a service shows the description at the left hand side of the screen as seen in the image above.**
+> **The "Description" tab gives a detailed description of each service. Clicking on a service shows the complete description at the left hand side of the screen as seen in the image above.**
 
 > **The "Status" tab shows if the service is runnung or not.**
 
-> **The "Startup Type" shows if it starts up automatically or manually. with the service highlighted "Credential Manager", we need to start it up manually.**
+> **The "Startup Type" shows if it starts up automatically or manually. with the service highlighted "Credential Manager", it starts up manually.**
 
-# I'll create a service with my name "Stormy" to launch an application "calc.exe" using Command Prompt CMD
+# I'll create a service with my name "Stormy" to launch an application "calc.exe" using the Command Prompt CMD
 
-> **First of all, we'll need to get the file path of calc.exe, check the images below to understand the process I took.**
+> **First of all, we'll need to get the file path of calc.exe. Check the images below to understand the process I used in achieving that.**
 
 ![](https://github.com/xst0rmy/P-Set2-Creating-a-Windows-Service/blob/main/Images/ws6.png)
 
@@ -37,7 +37,7 @@ Now time for some brief explanations
 
 ![](https://github.com/xst0rmy/P-Set2-Creating-a-Windows-Service/blob/main/Images/ws7.png)
 
-> **I double-clicked it and got an error message. (It's a program file, an ordinary user with little or no administrative priviledge cannot access program files)**
+> **I double-clicked on the application folder and got an error message. (It's a program file, an ordinary user with little or no administrative priviledge cannot access program files)**
 
 ![](https://github.com/xst0rmy/P-Set2-Creating-a-Windows-Service/blob/main/Images/ws8.png)
 
@@ -67,7 +67,7 @@ sc create “stormy” binPath= “C:\Program Files\WindowsApps\Microsoft.Window
 
 > **"sc" is a command that is used to install services**
 
-> **"create" tells the computer to create the service "stormy"**
+> **"create" tells the computer to create the a service called "stormy"**
 
 > **"binPath" shows the file path to follow**
 
@@ -75,9 +75,9 @@ sc create “stormy” binPath= “C:\Program Files\WindowsApps\Microsoft.Window
 
 #### N.B.; There is a space between "binPath=" and the file path. Don't miss it!
 
-> **We got a "createService RESPONSE" response as shown in the image above.**
+> **We got a "createService SUCCESS" response as shown in the image above.**
 
-> **I headed over to services application by searching for "services" and clicking on it from the result. I scrolled down to look for the service i just created.**
+> **I headed over to services application by searching for "services" and clicking on it from the result. I scrolled down to look for the service I just created.**
 
 ![](https://github.com/xst0rmy/P-Set2-Creating-a-Windows-Service/blob/main/Images/ws12.png)
 
